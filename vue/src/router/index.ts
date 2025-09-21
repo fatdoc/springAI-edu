@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import Home from '../views/Home.vue'
 import Config from '../views/Config.vue'
 import Chat from '../views/Chat.vue'
+import LLMConfig from '../views/LLMConfig.vue'
+import RoleConfig from '../views/RoleConfig.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -15,6 +17,16 @@ const router = createRouter({
       path: '/config',
       name: 'Config',
       component: Config
+    },
+    {
+      path: '/llm-config',
+      name: 'LLMConfig',
+      component: LLMConfig
+    },
+    {
+      path: '/role-config',
+      name: 'RoleConfig',
+      component: RoleConfig
     },
     {
       path: '/chat',
@@ -50,7 +62,12 @@ const router = createRouter({
       path: '/forkVoice',
       name: 'ForkVoice',
       component: () => import('@/views/fork.vue')
-    }
+    },
+      {
+          path: '/LLM_config',
+          name: 'LLM_config',
+          component: () => import('@/views/LLMConfig.vue')
+      }
   ],
 })
 

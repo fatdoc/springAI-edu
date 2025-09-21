@@ -90,6 +90,13 @@ const aiApps = ref([
     description: '私人声音定制',
     route: '/forkVoice',
     icon: DamaiAssistantIcon
+  },
+  {
+    id: 9,
+    title: ' LLM配置',
+    description: '私人声音定制',
+    route: '/LLMconfig',
+    icon: DamaiAssistantIcon
   }
 ])
 </script>
