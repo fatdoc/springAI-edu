@@ -28,7 +28,7 @@ router.beforeEach((to, from, next) => {
   <div class="app" :class="{ 'dark': isDark }">
     <nav class="navbar">
       <router-link to="/" class="logo">
-        <span class="logo-text">大麦 AI</span>
+        <span class="logo-text">springAI EDU</span>
       </router-link>
       <button @click="toggleDark()" class="theme-toggle" aria-label="切换主题">
         <SunIcon v-if="isDark" class="icon" />

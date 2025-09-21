@@ -51,15 +51,15 @@ const aiApps = ref([
   },
   {
     id: 3,
-    title: '大麦贴心助手',
-    description: '帮你解决大麦业务相关的问题',
+    title: '记忆配置',
+    description: '配置你的模型的上下文记忆',
     route: '/damai-ai',
     icon: DamaiAssistantRobotIcon
   },
   {
     id: 4,
-    title: '大麦规则助手',
-    description: '帮你解决大麦规则相关的问题',
+    title: '记忆对话',
+    description: '让你的对话模型记住上下文具有记忆',
     route: '/damai-rag',
     icon: DamaiAssistantIcon
   },

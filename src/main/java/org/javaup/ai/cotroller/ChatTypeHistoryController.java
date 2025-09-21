@@ -16,7 +16,7 @@ import java.util.List;
 /**
  * @program: 大麦-ai智能服务项目。 添加 阿星不是程序员 微信，添加时备注 ai 来获取项目的完整资料 
  * @description: 聊天记录控制器
- * @author: 阿星不是程序员
+ * @author: docfat
  **/
 @RequiredArgsConstructor
 @RestController
