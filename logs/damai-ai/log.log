@@ -1,0 +1,5 @@
+[damai-ai] 2025-08-20 07:05:36  WARN HikariPool:820 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=7h27m17s967ms15µs).
+[damai-ai] 2025-08-20 07:28:34  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[damai-ai] 2025-08-20 07:28:34  INFO GracefulShutdown:76 - Graceful shutdown complete
+[damai-ai] 2025-08-20 07:28:34  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[damai-ai] 2025-08-20 07:28:34  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.

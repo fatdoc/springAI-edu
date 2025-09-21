@@ -1,0 +1,4 @@
+# 项目排除路径
+/target/
+/vue/src/router/index.js
+/vue/src/main.js

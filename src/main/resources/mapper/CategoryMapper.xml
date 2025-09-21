@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="org.javaup.ai.products.mapper.CategoryMapper">
+    <resultMap id="CategoryResultMap" type="org.javaup.ai.products.domain.Category">
+        <id property="categoryId" column="category_id"/>
+        <result property="categoryName" column="category_name"/>
+        <result property="parentCategoryId" column="parent_category_id"/>
+        <result property="createdAt" column="created_at"/>
+        <result property="updatedAt" column="updated_at"/>
+    </resultMap>
+
+    <insert id="insertCategory" parameterType="org.javaup.ai.products.domain.Category">
+        INSERT INTO categories (category_name, parent_category_id)
+        VALUES (#{categoryName}, #{parentCategoryId})
+        <selectKey keyProperty="categoryId" resultType="int" order="AFTER">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+    </insert>
+
+    <update id="updateCategory" parameterType="org.javaup.ai.products.domain.Category">
+        UPDATE categories
+        SET category_name = #{categoryName},
+            parent_category_id = #{parentCategoryId}
+        WHERE category_id = #{categoryId}
+    </update>
+
+    <delete id="deleteCategory" parameterType="int">
+        DELETE FROM categories WHERE category_id = #{categoryId}
+    </delete>
+
+    <select id="selectCategoryById" parameterType="int" resultMap="CategoryResultMap">
+        SELECT * FROM categories WHERE category_id = #{categoryId}
+    </select>
+
+    <select id="selectAllCategories" resultMap="CategoryResultMap">
+        SELECT * FROM categories
+    </select>
+</mapper>
