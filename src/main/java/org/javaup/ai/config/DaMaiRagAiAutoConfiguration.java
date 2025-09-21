@@ -43,8 +43,9 @@ public class DaMaiRagAiAutoConfiguration {
     public ChatClient markdownChatClient(OpenAiChatModel model, ChatMemory chatMemory, VectorStore vectorStore,
                                          MarkdownLoader markdownLoader, ChatTypeHistoryService chatTypeHistoryService, 
                                          @Qualifier("titleChatClient")ChatClient titleChatClient) {
-        List<Document> documentList = markdownLoader.loadMarkdowns();
-        vectorStore.add(documentList);
+        // 注释掉文档切割功能
+        // List<Document> documentList = markdownLoader.loadMarkdowns();
+        // vectorStore.add(documentList);
         
         return ChatClient
                 .builder(model)

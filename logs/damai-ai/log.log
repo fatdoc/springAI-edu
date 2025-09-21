@@ -292,3 +292,239 @@ Caused by: java.sql.SQLSyntaxErrorException: Unknown database 'private_ai'
 	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:913) ~[spring-beans-6.2.7.jar:6.2.7]
 	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:791) ~[spring-beans-6.2.7.jar:6.2.7]
 	... 21 more
+[damai-ai] 2025-09-21 21:35:30  INFO DaMaiAiApplication:53 - Starting DaMaiAiApplication using Java 21.0.8 with PID 25977 (/Users/docfat/Desktop/work/code/springAI-edu/target/classes started by docfat in /Users/docfat/Desktop/work/code/springAI-edu)
+[damai-ai] 2025-09-21 21:35:30  INFO DaMaiAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[damai-ai] 2025-09-21 21:35:30  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'chatMemory' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:35:30  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'titleChatClient' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:35:30  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'vectorStore' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:35:30  INFO TomcatWebServer:111 - Tomcat initialized with port 8989 (http)
+[damai-ai] 2025-09-21 21:35:30  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-8989"]
+[damai-ai] 2025-09-21 21:35:30  INFO StandardService:168 - Starting service [Tomcat]
+[damai-ai] 2025-09-21 21:35:30  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[damai-ai] 2025-09-21 21:35:30  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[damai-ai] 2025-09-21 21:35:30  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 467 ms
+[damai-ai] 2025-09-21 21:35:30  INFO easy-es:30 - ===> manual index mode activated
+[damai-ai] 2025-09-21 21:35:31  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[damai-ai] 2025-09-21 21:35:31  INFO HikariPool:575 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c91a008
+[damai-ai] 2025-09-21 21:35:31  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:34 - 找到 2 个Markdown文件
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:37 - 正在处理文件: 节目取消和退票-相关问题与回答.md
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:46 - 提取的文档标签: 节目取消和退票
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:61 - 文件 节目取消和退票-相关问题与回答.md 加载了 5 个文档片段
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:37 - 正在处理文件: 节目订票-相关问题与回答.md
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:46 - 提取的文档标签: 节目订票
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:61 - 文件 节目订票-相关问题与回答.md 加载了 9 个文档片段
+[damai-ai] 2025-09-21 21:35:31  INFO MarkdownLoader:64 - 总共加载了 14 个文档片段
+[damai-ai] 2025-09-21 21:35:32  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 456da24d-05fc-4708-9729-01667123ab07
+[damai-ai] 2025-09-21 21:35:32  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 3066eb8b-3ac3-49b4-a3c5-717c09323f64
+[damai-ai] 2025-09-21 21:35:32  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 5faa9dee-5b45-48a9-880f-ccbd7a7ebd08
+[damai-ai] 2025-09-21 21:35:33  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 95ce6170-16ac-4562-80bf-78ff2cd5d0a2
+[damai-ai] 2025-09-21 21:35:33  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 78eaeaa7-b93a-45f3-905e-2dce4f5b2ddd
+[damai-ai] 2025-09-21 21:35:33  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 8bb76b71-4cb4-463e-a593-2d4d590af1bf
+[damai-ai] 2025-09-21 21:35:33  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 0a4c5899-a8ce-41ab-ab1a-10a31717176b
+[damai-ai] 2025-09-21 21:35:33  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 86f6ec3a-7db2-41ee-a64b-57585dd6f2a7
+[damai-ai] 2025-09-21 21:35:34  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 420fc7c1-135e-4351-bd55-4119675104fa
+[damai-ai] 2025-09-21 21:35:34  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 262a9b15-698e-4775-96de-aeb041410abe
+[damai-ai] 2025-09-21 21:35:34  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = b328b28d-de38-430d-9345-864389bf9413
+[damai-ai] 2025-09-21 21:35:34  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = e5a8097a-98f8-4fd7-be33-507620b1b0e7
+[damai-ai] 2025-09-21 21:35:35  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = a83794de-74f7-4fcd-aee7-9803f2f6b293
+[damai-ai] 2025-09-21 21:35:35  INFO SimpleVectorStore:112 - Calling EmbeddingModel for document id = 6832df38-6359-4de8-a97f-a7e0c76fe85d
+[damai-ai] 2025-09-21 21:35:36  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-8989"]
+[damai-ai] 2025-09-21 21:35:36  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[damai-ai] 2025-09-21 21:35:36  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[damai-ai] 2025-09-21 21:35:36  INFO DispatcherServlet:554 - Completed initialization in 1 ms
+[damai-ai] 2025-09-21 21:35:36  INFO TomcatWebServer:243 - Tomcat started on port 8989 (http) with context path '/'
+[damai-ai] 2025-09-21 21:35:36  INFO DaMaiAiApplication:59 - Started DaMaiAiApplication in 5.989 seconds (process running for 6.486)
+[damai-ai] 2025-09-21 21:59:42  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[damai-ai] 2025-09-21 21:59:44  INFO GracefulShutdown:76 - Graceful shutdown complete
+[damai-ai] 2025-09-21 21:59:44  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[damai-ai] 2025-09-21 21:59:44  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[damai-ai] 2025-09-21 21:59:45  INFO DaMaiAiApplication:53 - Starting DaMaiAiApplication using Java 21.0.8 with PID 26378 (/Users/docfat/Desktop/work/code/springAI-edu/target/classes started by docfat in /Users/docfat/Desktop/work/code/springAI-edu)
+[damai-ai] 2025-09-21 21:59:45  INFO DaMaiAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[damai-ai] 2025-09-21 21:59:45  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'chatMemory' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:59:45  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'titleChatClient' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:59:45  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'vectorStore' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 21:59:45  INFO TomcatWebServer:111 - Tomcat initialized with port 8989 (http)
+[damai-ai] 2025-09-21 21:59:45  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-8989"]
+[damai-ai] 2025-09-21 21:59:45  INFO StandardService:168 - Starting service [Tomcat]
+[damai-ai] 2025-09-21 21:59:45  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[damai-ai] 2025-09-21 21:59:45  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[damai-ai] 2025-09-21 21:59:45  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 438 ms
+[damai-ai] 2025-09-21 21:59:45  INFO easy-es:30 - ===> manual index mode activated
+[damai-ai] 2025-09-21 21:59:46  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[damai-ai] 2025-09-21 21:59:46  INFO HikariPool:575 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@63636de0
+[damai-ai] 2025-09-21 21:59:46  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[damai-ai] 2025-09-21 21:59:46 ERROR MarkdownLoader:66 - Markdown 文档加载失败
+java.io.FileNotFoundException: class path resource [datum/] cannot be resolved to URL because it does not exist
+	at org.springframework.core.io.ClassPathResource.getURL(ClassPathResource.java:230) ~[spring-core-6.2.7.jar:6.2.7]
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.findPathMatchingResources(PathMatchingResourcePatternResolver.java:726) ~[spring-core-6.2.7.jar:6.2.7]
+	at org.springframework.core.io.support.PathMatchingResourcePatternResolver.getResources(PathMatchingResourcePatternResolver.java:387) ~[spring-core-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.getResources(AbstractApplicationContext.java:1549) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.GenericApplicationContext.getResources(GenericApplicationContext.java:263) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.javaup.ai.ai.rag.MarkdownLoader.loadMarkdowns(MarkdownLoader.java:33) ~[classes/:?]
+	at org.javaup.ai.config.DaMaiRagAiAutoConfiguration.markdownChatClient(DaMaiRagAiAutoConfiguration.java:46) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:468) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) [spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) [spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) [spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) [spring-boot-3.5.0.jar:3.5.0]
+	at org.javaup.ai.DaMaiAiApplication.main(DaMaiAiApplication.java:18) [classes/:?]
+[damai-ai] 2025-09-21 21:59:47  WARN AnnotationConfigServletWebServerApplicationContext:635 - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'programController': Injection of resource dependencies failed
+[damai-ai] 2025-09-21 21:59:47  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[damai-ai] 2025-09-21 21:59:47  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.
+[damai-ai] 2025-09-21 21:59:47  INFO StandardService:168 - Stopping service [Tomcat]
+[damai-ai] 2025-09-21 21:59:47  INFO ConditionEvaluationReportLogger:82 - 
+
+Error starting ApplicationContext. To display the condition evaluation report re-run your application with 'debug' enabled.
+[damai-ai] 2025-09-21 21:59:47 ERROR SpringApplication:858 - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'programController': Injection of resource dependencies failed
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:372) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1459) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:606) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.instantiateSingleton(DefaultListableBeanFactory.java:1222) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingleton(DefaultListableBeanFactory.java:1188) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:1123) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:987) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:627) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:146) ~[spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:753) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:439) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:318) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1362) [spring-boot-3.5.0.jar:3.5.0]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1351) [spring-boot-3.5.0.jar:3.5.0]
+	at org.javaup.ai.DaMaiAiApplication.main(DaMaiAiApplication.java:18) [classes/:?]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'markdownChatClient' defined in class path resource [org/javaup/ai/config/DaMaiRagAiAutoConfiguration.class]: Failed to instantiate [org.springframework.ai.chat.client.ChatClient]: Factory method 'markdownChatClient' threw exception with message: Documents list cannot be empty
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:657) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:468) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369) ~[spring-context-6.2.7.jar:6.2.7]
+	... 19 more
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [org.springframework.ai.chat.client.ChatClient]: Factory method 'markdownChatClient' threw exception with message: Documents list cannot be empty
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:199) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:468) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369) ~[spring-context-6.2.7.jar:6.2.7]
+	... 19 more
+Caused by: java.lang.IllegalArgumentException: Documents list cannot be empty
+	at org.springframework.ai.vectorstore.SimpleVectorStore.doAdd(SimpleVectorStore.java:108) ~[spring-ai-vector-store-1.0.0.jar:1.0.0]
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.lambda$add$1(AbstractObservationVectorStore.java:85) ~[spring-ai-vector-store-1.0.0.jar:1.0.0]
+	at io.micrometer.observation.Observation.observe(Observation.java:498) ~[micrometer-observation-1.15.0.jar:1.15.0]
+	at org.springframework.ai.vectorstore.observation.AbstractObservationVectorStore.add(AbstractObservationVectorStore.java:85) ~[spring-ai-vector-store-1.0.0.jar:1.0.0]
+	at org.javaup.ai.config.DaMaiRagAiAutoConfiguration.markdownChatClient(DaMaiRagAiAutoConfiguration.java:47) ~[classes/:?]
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103) ~[?:?]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580) ~[?:?]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.lambda$instantiate$0(SimpleInstantiationStrategy.java:171) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiateWithFactoryMethod(SimpleInstantiationStrategy.java:88) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:168) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:653) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:645) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1375) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1205) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:569) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:529) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:339) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:373) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:337) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.resolveBeanByName(AbstractAutowireCapableBeanFactory.java:468) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.autowireResource(CommonAnnotationBeanPostProcessor.java:606) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.getResource(CommonAnnotationBeanPostProcessor.java:577) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor$ResourceElement.getResourceToInject(CommonAnnotationBeanPostProcessor.java:739) ~[spring-context-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata$InjectedElement.inject(InjectionMetadata.java:272) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:146) ~[spring-beans-6.2.7.jar:6.2.7]
+	at org.springframework.context.annotation.CommonAnnotationBeanPostProcessor.postProcessProperties(CommonAnnotationBeanPostProcessor.java:369) ~[spring-context-6.2.7.jar:6.2.7]
+	... 19 more
+[damai-ai] 2025-09-21 22:09:09  INFO DaMaiAiApplication:53 - Starting DaMaiAiApplication using Java 21.0.8 with PID 27186 (/Users/docfat/Desktop/work/code/springAI-edu/target/classes started by docfat in /Users/docfat/Desktop/work/code/springAI-edu)
+[damai-ai] 2025-09-21 22:09:09  INFO DaMaiAiApplication:652 - No active profile set, falling back to 1 default profile: "default"
+[damai-ai] 2025-09-21 22:09:09  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'chatMemory' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=chatMemory; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 22:09:09  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'titleChatClient' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=titleChatClient; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 22:09:09  INFO DefaultListableBeanFactory:1334 - Overriding bean definition for bean 'vectorStore' with a different definition: replacing [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiAiAutoConfiguration.class]] with [Root bean: class=null; scope=; abstract=false; lazyInit=null; autowireMode=3; dependencyCheck=0; autowireCandidate=true; primary=false; fallback=false; factoryBeanName=org.javaup.ai.config.DaMaiPrivateRagAiAutoConfiguration; factoryMethodName=vectorStore; initMethodNames=null; destroyMethodNames=[(inferred)]; defined in class path resource [org/javaup/ai/config/DaMaiPrivateRagAiAutoConfiguration.class]]
+[damai-ai] 2025-09-21 22:09:09  INFO TomcatWebServer:111 - Tomcat initialized with port 8989 (http)
+[damai-ai] 2025-09-21 22:09:09  INFO Http11NioProtocol:168 - Initializing ProtocolHandler ["http-nio-8989"]
+[damai-ai] 2025-09-21 22:09:09  INFO StandardService:168 - Starting service [Tomcat]
+[damai-ai] 2025-09-21 22:09:09  INFO StandardEngine:168 - Starting Servlet engine: [Apache Tomcat/10.1.41]
+[damai-ai] 2025-09-21 22:09:09  INFO [/]:168 - Initializing Spring embedded WebApplicationContext
+[damai-ai] 2025-09-21 22:09:09  INFO ServletWebServerApplicationContext:301 - Root WebApplicationContext: initialization completed in 470 ms
+[damai-ai] 2025-09-21 22:09:09  INFO easy-es:30 - ===> manual index mode activated
+[damai-ai] 2025-09-21 22:09:09  INFO HikariDataSource:109 - HikariPool-1 - Starting...
+[damai-ai] 2025-09-21 22:09:09  INFO HikariPool:575 - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@6f7b8ae1
+[damai-ai] 2025-09-21 22:09:09  INFO HikariDataSource:122 - HikariPool-1 - Start completed.
+[damai-ai] 2025-09-21 22:09:10  INFO Http11NioProtocol:168 - Starting ProtocolHandler ["http-nio-8989"]
+[damai-ai] 2025-09-21 22:09:10  INFO [/]:168 - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[damai-ai] 2025-09-21 22:09:10  INFO DispatcherServlet:532 - Initializing Servlet 'dispatcherServlet'
+[damai-ai] 2025-09-21 22:09:10  INFO DispatcherServlet:554 - Completed initialization in 0 ms
+[damai-ai] 2025-09-21 22:09:10  INFO TomcatWebServer:243 - Tomcat started on port 8989 (http) with context path '/'
+[damai-ai] 2025-09-21 22:09:10  INFO DaMaiAiApplication:59 - Started DaMaiAiApplication in 1.53 seconds (process running for 1.873)
+[damai-ai] 2025-09-21 22:09:16  INFO GracefulShutdown:54 - Commencing graceful shutdown. Waiting for active requests to complete
+[damai-ai] 2025-09-21 22:09:18  INFO GracefulShutdown:76 - Graceful shutdown complete
+[damai-ai] 2025-09-21 22:09:18  INFO HikariDataSource:349 - HikariPool-1 - Shutdown initiated...
+[damai-ai] 2025-09-21 22:09:18  INFO HikariDataSource:351 - HikariPool-1 - Shutdown completed.

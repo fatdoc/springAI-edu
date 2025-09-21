@@ -22,7 +22,7 @@ spring:
         WRITE_NUMBERS_AS_STRINGS: true
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://localhost:3306/private_AI?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&tinyInt1isBit=false&allowPublicKeyRetrieval=true&allowMultiQueries=true&useServerPrepStmts=false
+    url: jdbc:mysql://localhost:3306/springai_edu?serverTimezone=Asia/Shanghai&useSSL=false&useUnicode=true&characterEncoding=utf-8&zeroDateTimeBehavior=convertToNull&transformedBitIsBoolean=true&tinyInt1isBit=false&allowPublicKeyRetrieval=true&allowMultiQueries=true&useServerPrepStmts=false
     username: root
     password: 12345678
   ai:
@@ -52,19 +52,6 @@ spring:
       chat:
         options:
           model: deepseek-chat
-easy-es:
-  #默认为true,若为false则认为不启用本框架
-  enable: true
-  # es的连接地址,必须含端口
-  address : 127.0.0.1:9200
-  #账号,若无 则可省略此行配置
-  username: elastic
-  #密码,若无 则可省略此行配置
-  password: elastic
-  global-config:
-    db-config:
-      #索引前缀
-      index-prefix: damai-
 mybatis-plus:
   mapper-locations: classpath:mapper/*.xml
   global-config:
