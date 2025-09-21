@@ -19,11 +19,6 @@ const router = createRouter({
       component: Config
     },
     {
-      path: '/llm-config',
-      name: 'LLMConfig',
-      component: LLMConfig
-    },
-    {
       path: '/role-config',
       name: 'RoleConfig',
       component: RoleConfig

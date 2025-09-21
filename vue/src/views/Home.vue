@@ -93,9 +93,16 @@ const aiApps = ref([
   },
   {
     id: 9,
-    title: ' LLM配置',
-    description: '私人声音定制',
-    route: '/LLMconfig',
+    title: 'LLM配置',
+    description: '配置ChatGPT、DeepSeek、豆包等大模型参数',
+    route: '/LLM_config',
+    icon: DamaiAssistantIcon
+  },
+  {
+    id: 10,
+    title: '角色配置',
+    description: '配置AI角色和系统提示词',
+    route: '/role-config',
     icon: DamaiAssistantIcon
   }
 ])
